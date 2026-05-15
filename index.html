@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Актив-Позитив — Прокат и Сервис снаряжения в Томске</title>
+  <meta name="description" content="Прокат велосипедов, лыж, сноубордов и тюбингов в Томске. Профессиональный сервис снаряжения. Академгородок, доставка по городу." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">
+      <span class="logo__icon">🚴</span>
+      <div class="logo__text">
+        <span class="logo__title">Актив-Позитив</span>
+        <span class="logo__sub">Велосипеды · Лыжи · Сервис</span>
+      </div>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#catalog" class="nav__link">Прокат</a>
+      <a href="#repair" class="nav__link">Ремонт</a>
+      <a href="#offers" class="nav__link">Цены</a>
+      <a href="#contacts" class="nav__link">Контакты</a>
+    </nav>
+
+    <div class="header__cta">
+      <a href="tel:+73822000000" class="header__phone">+7 (3822) 00-00-00</a>
+      <a href="#booking" class="btn btn--primary btn--sm">Записаться</a>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="home">
+  <div class="hero__bg">
+    <div class="hero__overlay"></div>
+    <div class="hero__shapes">
+      <div class="shape shape--1"></div>
+      <div class="shape shape--2"></div>
+      <div class="shape shape--3"></div>
+    </div>
+  </div>
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <div class="hero__badge">📍 Томск, Академгородок</div>
+      <h1 class="hero__title">Живи активно<br>в <span class="text-accent">Томске</span></h1>
+      <p class="hero__desc" id="hero-desc">Прокат и профессиональный сервис снаряжения. Готовим лыжи под температуру снега в Академгородке — сегодня вечером, для завтрашнего катания.</p>
+      <div class="hero__actions">
+        <a href="#catalog" class="btn btn--primary btn--lg">Смотреть каталог</a>
+        <a href="#booking" class="btn btn--outline btn--lg">Записаться на ТО</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num">500+</span>
+          <span class="stat__label">довольных клиентов</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">5 лет</span>
+          <span class="stat__label">в Томске</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">300₽</span>
+          <span class="stat__label">доставка к подъезду</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__card hero__card--main" id="hero-card-main">
+        <div class="hero__card-icon" id="hero-card-main-icon">⛷️</div>
+        <div class="hero__card-text">
+          <strong id="hero-card-main-title">Зима в разгаре!</strong>
+          <span id="hero-card-main-sub">Лыжи, сноуборды, тюбинги</span>
+        </div>
+      </div>
+      <div class="hero__card hero__card--float" id="hero-card-float">
+        <div class="hero__card-icon" id="hero-card-float-icon">🔧</div>
+        <div class="hero__card-text">
+          <strong id="hero-card-float-title">Заточка кантов</strong>
+          <span id="hero-card-float-sub">от 500₽</span>
+        </div>
+      </div>
+      <div class="hero__illustration">
+        <div class="illus-circle illus-circle--1"></div>
+        <div class="illus-circle illus-circle--2"></div>
+        <div class="illus-icon" id="hero-illus-icon">🏔️</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <span>листайте вниз</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ==================== DIRECTIONS (Зима / Лето) ==================== -->
+<section class="directions" id="directions">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Выберите направление</h2>
+      <p class="section-sub">Активный отдых круглый год — для всей семьи</p>
+    </div>
+    <div class="directions__grid">
+      <a href="#catalog" class="direction-card direction-card--winter active-season" data-season="winter">
+        <div class="direction-card__bg"></div>
+        <div class="direction-card__icon">❄️</div>
+        <h3 class="direction-card__title">Зима</h3>
+        <ul class="direction-card__list">
+          <li>🎿 Лыжи беговые и горные</li>
+          <li>🏂 Сноуборды</li>
+          <li>🛷 Тюбинги (ватрушки)</li>
+          <li>🥾 Ботинки и шлемы</li>
+        </ul>
+        <span class="direction-card__cta">Смотреть прокат →</span>
+        <div class="direction-card__badge">Сезон сейчас</div>
+      </a>
+      <a href="#catalog" class="direction-card direction-card--summer" data-season="summer">
+        <div class="direction-card__bg"></div>
+        <div class="direction-card__icon">☀️</div>
+        <h3 class="direction-card__title">Лето</h3>
+        <ul class="direction-card__list">
+          <li>🚴 Велосипеды горные и городские</li>
+          <li>🛴 Самокаты</li>
+          <li>🏄 SUP-борды</li>
+          <li>⛸️ Ролики</li>
+        </ul>
+        <span class="direction-card__cta">Смотреть прокат →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHY US ==================== -->
+<section class="why-us" id="why">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Почему выбирают нас</h2>
+      <p class="section-sub">Мы не просто выдаём лыжи — мы готовим их под температуру снега в Академгородке</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-card__icon">🔪</div>
+        <h4 class="why-card__title">Лучшие канты — наша страсть</h4>
+        <p class="why-card__text">Станок и ручная доводка. Кадры с заточкой кантов — это не реклама, это наша ежедневная работа. Катание после нашего сервиса — это другой уровень.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card__icon">🧼</div>
+        <h4 class="why-card__title">Чистота и гигиена</h4>
+        <p class="why-card__text">Обязательная сушка и дезинфекция ботинок после каждой аренды. Получишь снаряжение как для себя.</p>
+      </div>
+      <div class="why-card why-card--accent">
+        <div class="why-card__icon">📍</div>
+        <h4 class="why-card__title">Центр / Академгородок</h4>
+        <p class="why-card__text">Удобное расположение. Рядом с лыжными трассами и велодорожками. Доставим комплект к подъезду за 300₽.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card__icon">👨‍🔧</div>
+        <h4 class="why-card__title">Мастер — сам фанат</h4>
+        <p class="why-card__text">Хозяин сам катается. На сайте должна быть твоя цитата или фото в рабочей форме. Это вызывает в 10 раз больше доверия, чем безликий сервис.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card__icon">📅</div>
+        <h4 class="why-card__title">Работаем допоздна</h4>
+        <p class="why-card__text">Можно приехать вечером после работы. Принимаем бронирование онлайн — приедешь к готовому снаряжению.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card__icon">🎯</div>
+        <h4 class="why-card__title">Бронь конкретной модели</h4>
+        <p class="why-card__text">Не просто «комплект», а конкретные лыжи Fischer или Salomon. Для новичков — подберём под рост и стиль.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CATALOG ==================== -->
+<section class="catalog" id="catalog">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Каталог проката</h2>
+      <p class="section-sub">Цена за 1 час / сутки / 3 суток</p>
+    </div>
+
+    <div class="catalog-tabs">
+      <button class="tab-btn active" data-tab="winter">❄️ Зима</button>
+      <button class="tab-btn" data-tab="summer">☀️ Лето</button>
+      <button class="tab-btn" data-tab="repair-tab">🔧 Сервис</button>
+    </div>
+
+    <!-- ЗИМА -->
+    <div class="catalog-grid" id="tab-winter">
+      <div class="product-card">
+        <div class="product-card__badge">Хит</div>
+        <div class="product-card__img product-card__img--ski">🎿</div>
+        <div class="product-card__body">
+          <div class="product-card__master-rec">👨‍🔧 Рекомендация мастера</div>
+          <h3 class="product-card__title">Лыжи беговые (комплект)</h3>
+          <p class="product-card__desc">Лыжи + ботинки + палки. Подготовлены под температуру снега. Модели Fischer, Salomon.</p>
+          <div class="product-card__prices">
+            <div class="price-item"><span class="price-item__label">1 час</span><span class="price-item__val">200₽</span></div>
+            <div class="price-item"><span class="price-item__label">Сутки</span><span class="price-item__val">800₽</span></div>
+            <div class="price-item price-item--accent"><span class="price-item__label">3 суток</span><span class="price-item__val">2 000₽</span></div>
+          </div>
+          <a href="#booking" class="btn btn--primary btn--full">Забронировать</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card__img product-card__img--snowboard">🏂</div>
+        <div class="product-card__body">
+          <h3 class="product-card__title">Сноуборд (комплект)</h3>
+          <p class="product-card__desc">Доска + ботинки. Канты заточены. Для начинающих и уверенных райдеров.</p>
+          <div class="product-card__prices">
+            <div class="price-item"><span class="price-item__label">1 час</span><span class="price-item__val">250₽</span></div>
+            <div class="price-item"><span class="price-item__label">Сутки</span><span class="price-item__val">800₽</span></div>
+            <div class="price-item price-item--accent"><span class="price-item__label">3 суток</span><span class="price-item__val">2 200₽</span></div>
+          </div>
+          <a href="#booking" class="btn btn--primary btn--full">Забронировать</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card__badge product-card__badge--family">Семейный</div>
+        <div class="product-card__img product-card__img--tubing">🛷</div>
+        <div class="product-card__body">
+          <h3 class="product-card__title">Тюбинг / Ватрушка</h3>
+          <p class="product-card__desc">Для веселья на горках. Разные размеры: детские, взрослые, двойные.</p>
+          <div class="product-card__prices">
+            <div class="price-item"><span class="price-item__label">1 час</span><span class="price-item__val">300₽</span></div>
+            <div class="price-item"><span class="price-item__label">Полдня</span><span class="price-item__val">500₽</span></div>
+            <div class="price-item price-item--accent"><span class="price-item__label">Сутки</span><span class="price-item__val">700₽</span></div>
+          </div>
+          <a href="#booking" class="btn btn--primary btn--full">Забронировать</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card__img product-card__img--helmet">🥾</div>
+        <div class="product-card__body">
+          <h3 class="product-card__title">Ботинки горнолыжные</h3>
+          <p class="product-card__desc">Все размеры. Дезинфекция обязательна. Тёплые и удобные.</p>
+          <div class="product-card__prices">
+            <div class="price-item"><span class="price-item__label">Сутки</span><span class="price-item__val">300₽</span></div>
+            <div class="price-item"><span class="price-item__label">3 суток</span><span class="price-item__val">700₽</span></div>
+            <div class="price-item price-item--accent"><span class="price-item__label">Неделя</span><span class="price-item__val">1 400₽</span></div>
+          </div>
+          <a href="#booking" class="btn btn--primary btn--full">Забронировать</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ЛЕТО -->
+    <div class="catalog-grid hidden" id="tab-summer">
+      <div class="product-card">
+        <div class="product-card__badge">Хит лета</div>
+        <div class="product-card__img product-card__img--mtb">🚵</div>
+        <div class="product-card__body">
+          <div class="product-card__master-rec">👨‍🔧 Рекомендация мастера</div>
+          <h3 class="product-card__title">Велосипед горный</h3>
+          <p class="product-card__desc">29" колёса, дисковые тормоза, амортизационная вилка. Настроен и смазан.</p>
+          <div class="product-card__prices">
+            <div class="price-item"><span class="price-item__label">1 час</span><span class="price-item__val">150₽</span></div>
+            <div class="price-item"><span class="price-item__label">Сутки</span><span class="price-item__val">600₽</span></div>
+            <div class="price-item price-item--accent"><span class="price-item__label">3 суток</span><span class="price-item__val">1 500₽</span></div>
+          </div>
+          <a href="#booking" class="btn btn--primary btn--full">Забронировать</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card__img product-card__img--city">🚲</div>
+        <div class="product-card__body">
+          <h3 class="product-card__title">Велосипед городской</h3>
+          <p class="product-card__desc">Низкая рама, корзина, удобная посадка. Для прогулок по городу и паркам.</p>
+          <div class="product-card__prices">
+            <div class="price-item"><span class="price-item__label">1 час</span><span class="price-item__val">120₽</span></div>
+            <div class="price-item"><span class="price-item__label">Сутки</span><span class="price-item__val">500₽</span></div>
+            <div class="price-item price-item--accent"><span class="price-item__label">3 суток</span><span class="price-item__val">1 200₽</span></div>
+          </div>
+          <a href="#booking" class="btn btn--primary btn--full">Забронировать</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card__img product-card__img--scooter">🛴</div>
+        <div class="product-card__body">
+          <h3 class="product-card__title">Самокат</h3>
+          <p class="product-card__desc">Взрослые и детские. Надёжные тормоза, лёгкая алюминиевая рама.</p>
+          <div class="product-card__prices">
+            <div class="price-item"><span class="price-item__label">1 час</span><span class="price-item__val">100₽</span></div>
+            <div class="price-item"><span class="price-item__label">Сутки</span><span class="price-item__val">400₽</span></div>
+            <div class="price-item price-item--accent"><span class="price-item__label">3 суток</span><span class="price-item__val">900₽</span></div>
+          </div>
+          <a href="#booking" class="btn btn--primary btn--full">Забронировать</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card__img product-card__img--sup">🏄</div>
+        <div class="product-card__body">
+          <h3 class="product-card__title">SUP-борд</h3>
+          <p class="product-card__desc">Надувная доска для сёрфинга стоя. Для рек, озёр и прудов Томска.</p>
+          <div class="product-card__prices">
+            <div class="price-item"><span class="price-item__label">1 час</span><span class="price-item__val">500₽</span></div>
+            <div class="price-item"><span class="price-item__label">Полдня</span><span class="price-item__val">1 500₽</span></div>
+            <div class="price-item price-item--accent"><span class="price-item__label">Сутки</span><span class="price-item__val">2 500₽</span></div>
+          </div>
+          <a href="#booking" class="btn btn--primary btn--full">Забронировать</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- СЕРВИС -->
+    <div class="catalog-grid hidden" id="tab-repair-tab">
+      <div class="product-card">
+        <div class="product-card__badge product-card__badge--service">Топ</div>
+        <div class="product-card__img product-card__img--wax">🎿</div>
+        <div class="product-card__body">
+          <div class="product-card__master-rec">👨‍🔧 Рекомендация мастера</div>
+          <h3 class="product-card__title">Лыжный сервис (полный)</h3>
+          <p class="product-card__desc">Смазка парафином + заточка кантов + шлифовка скользяка. Готовим под завтрашнюю погоду.</p>
+          <div class="product-card__prices">
+            <div class="price-item price-item--accent"><span class="price-item__label">Стоимость</span><span class="price-item__val">от 1 500₽</span></div>
+          </div>
+          <a href="#booking" class="btn btn--primary btn--full">Записаться</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card__img product-card__img--edge">🔪</div>
+        <div class="product-card__body">
+          <h3 class="product-card__title">Заточка кантов</h3>
+          <p class="product-card__desc">Ручная доводка + станок. Ощутимая разница на трассе уже после первого спуска.</p>
+          <div class="product-card__prices">
+            <div class="price-item price-item--accent"><span class="price-item__label">Лыжи</span><span class="price-item__val">500₽</span></div>
+            <div class="price-item price-item--accent"><span class="price-item__label">Сноуборд</span><span class="price-item__val">700₽</span></div>
+          </div>
+          <a href="#booking" class="btn btn--primary btn--full">Записаться</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card__img product-card__img--brake">🚲</div>
+        <div class="product-card__body">
+          <h3 class="product-card__title">Ремонт велосипеда</h3>
+          <p class="product-card__desc">Лечим велосипеды от скрипов и боли. Настройка тормозов, переключателей, правка колёс.</p>
+          <div class="product-card__prices">
+            <div class="price-item"><span class="price-item__label">Тормоза</span><span class="price-item__val">от 300₽</span></div>
+            <div class="price-item"><span class="price-item__label">Переключатели</span><span class="price-item__val">от 300₽</span></div>
+            <div class="price-item price-item--accent"><span class="price-item__label">ТО полное</span><span class="price-item__val">от 1 500₽</span></div>
+          </div>
+          <a href="#booking" class="btn btn--primary btn--full">Записаться</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card__img product-card__img--wheel">⚙️</div>
+        <div class="product-card__body">
+          <h3 class="product-card__title">Правка колёс</h3>
+          <p class="product-card__desc">Исправление восьмёрок и яиц. Спицовка с нуля если нужно.</p>
+          <div class="product-card__prices">
+            <div class="price-item price-item--accent"><span class="price-item__label">Стоимость</span><span class="price-item__val">от 600₽</span></div>
+          </div>
+          <a href="#booking" class="btn btn--primary btn--full">Записаться</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== REPAIR SECTION ==================== -->
+<section class="repair" id="repair">
+  <div class="container">
+    <div class="repair__inner">
+      <div class="repair__content">
+        <h2 class="section-title">Вернём байку или доске<br>заводской накат</h2>
+        <p class="repair__desc">Мы не просто «смотрим» — мы разбираем, чистим, настраиваем. После нашего сервиса техника работает как из магазина.</p>
+        <div class="repair__services">
+          <div class="repair__service"><span class="repair__service-icon">✅</span> Восковка парафином (под температуру)</div>
+          <div class="repair__service"><span class="repair__service-icon">✅</span> Заточка и правка кантов</div>
+          <div class="repair__service"><span class="repair__service-icon">✅</span> Ремонт расслоений скользяка</div>
+          <div class="repair__service"><span class="repair__service-icon">✅</span> Прокатка тормозов велосипеда</div>
+          <div class="repair__service"><span class="repair__service-icon">✅</span> Настройка переключателей</div>
+          <div class="repair__service"><span class="repair__service-icon">✅</span> Правка колёс (восьмёрки)</div>
+          <div class="repair__service"><span class="repair__service-icon">✅</span> Замена камер и покрышек</div>
+          <div class="repair__service"><span class="repair__service-icon">✅</span> Сборка нового велосипеда из коробки</div>
+        </div>
+        <a href="#booking" class="btn btn--primary btn--lg">Записаться на ремонт</a>
+      </div>
+      <div class="repair__before-after">
+        <h3 class="repair__ba-title">До / После</h3>
+        <div class="ba-cards">
+          <div class="ba-card">
+            <div class="ba-card__label ba-card__label--before">ДО</div>
+            <div class="ba-card__img ba-card__img--before">
+              <div class="ba-placeholder">
+                <span>🏂</span>
+                <p>Тупые канты, облезший парафин</p>
+              </div>
+            </div>
+          </div>
+          <div class="ba-arrow">→</div>
+          <div class="ba-card">
+            <div class="ba-card__label ba-card__label--after">ПОСЛЕ</div>
+            <div class="ba-card__img ba-card__img--after">
+              <div class="ba-placeholder ba-placeholder--after">
+                <span>✨</span>
+                <p>Острые канты, свежая смазка</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SPECIAL OFFERS ==================== -->
+<section class="offers" id="offers">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Спецпредложения</h2>
+      <p class="section-sub">Выгодные условия для постоянных клиентов и семей</p>
+    </div>
+    <div class="offers-grid">
+      <div class="offer-card offer-card--hot">
+        <div class="offer-card__tag">🔥 Популярное</div>
+        <h3 class="offer-card__title">4-й день бесплатно</h3>
+        <p class="offer-card__desc">Берёшь снаряжение на 3 дня — 4-й день в подарок. Отличный вариант для долгих выходных.</p>
+        <a href="#booking" class="btn btn--white btn--sm">Воспользоваться</a>
+      </div>
+      <div class="offer-card offer-card--discount">
+        <div class="offer-card__tag">💸 Скидка</div>
+        <h3 class="offer-card__title">−10% на сервис при аренде</h3>
+        <p class="offer-card__desc">Арендуешь снаряжение? Сервис и ремонт своей техники со скидкой 10%.</p>
+        <a href="#booking" class="btn btn--white btn--sm">Воспользоваться</a>
+      </div>
+      <div class="offer-card offer-card--family">
+        <div class="offer-card__tag">👨‍👩‍👧 Для семей</div>
+        <h3 class="offer-card__title">Семейный пакет</h3>
+        <p class="offer-card__desc">2 взрослых + 1 детский комплект — скидка 15% на общую сумму аренды.</p>
+        <a href="#booking" class="btn btn--white btn--sm">Воспользоваться</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== DELIVERY & PLEDGE ==================== -->
+<section class="delivery" id="delivery">
+  <div class="container">
+    <div class="delivery__grid">
+      <div class="delivery__block">
+        <h2 class="section-title">Доставка по Томску</h2>
+        <div class="delivery__items">
+          <div class="delivery__item">
+            <div class="delivery__item-icon">🚗</div>
+            <div>
+              <strong>Доставим к подъезду</strong>
+              <p>Привезём комплект прямо к вашему дому за <strong>300₽</strong>. Экономьте время!</p>
+            </div>
+          </div>
+          <div class="delivery__item">
+            <div class="delivery__item-icon">🕐</div>
+            <div>
+              <strong>Вечерняя выдача</strong>
+              <p>Работаем допоздна — забирай снаряжение после работы и езжай уже сегодня.</p>
+            </div>
+          </div>
+          <div class="delivery__item">
+            <div class="delivery__item-icon">🔔</div>
+            <div>
+              <strong>Ночной возврат</strong>
+              <p>Служба «Ночной возврат» — оставь снаряжение в указанном месте, мы заберём сами.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="delivery__block">
+        <h2 class="section-title">Залог и документы</h2>
+        <p class="delivery__pledge-desc">Прозрачные условия — никаких сюрпризов</p>
+        <div class="pledge-list">
+          <div class="pledge-item"><span>📋</span> Паспорт РФ (или другой документ)</div>
+          <div class="pledge-item"><span>💳</span> Залог 2 000–5 000₽ (возвращается при сдаче)</div>
+          <div class="pledge-item"><span>📞</span> Номер телефона</div>
+          <div class="pledge-item"><span>✅</span> Подписываем простой договор аренды</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SOCIAL PROOF ==================== -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Что говорят клиенты</h2>
+      <p class="section-sub">Живые отзывы из ВКонтакте и 2ГИС</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-card__header">
+          <div class="review-card__avatar">А</div>
+          <div>
+            <strong class="review-card__name">Андрей К.</strong>
+            <div class="review-card__stars">★★★★★</div>
+          </div>
+          <span class="review-card__source">ВКонтакте</span>
+        </div>
+        <p class="review-card__text">«Брал сноуборд на 3 дня. Канты были заточены идеально — это реально чувствуется на трассе. Буду ещё!»</p>
+      </div>
+      <div class="review-card">
+        <div class="review-card__header">
+          <div class="review-card__avatar" style="background:#4CAF50">М</div>
+          <div>
+            <strong class="review-card__name">Мария Л.</strong>
+            <div class="review-card__stars">★★★★★</div>
+          </div>
+          <span class="review-card__source">2ГИС</span>
+        </div>
+        <p class="review-card__text">«Привезли лыжный комплект прямо к подъезду — это очень удобно с детьми. Ботинки чистые, всё настроено. Спасибо!»</p>
+      </div>
+      <div class="review-card">
+        <div class="review-card__header">
+          <div class="review-card__avatar" style="background:#FF9800">С</div>
+          <div>
+            <strong class="review-card__name">Сергей Б.</strong>
+            <div class="review-card__stars">★★★★★</div>
+          </div>
+          <span class="review-card__source">ВКонтакте</span>
+        </div>
+        <p class="review-card__text">«Привёз велосипед после зимы — скрипел и не переключался. За час всё починили, стоит недорого. Рекомендую!»</p>
+      </div>
+      <div class="review-card">
+        <div class="review-card__header">
+          <div class="review-card__avatar" style="background:#9C27B0">Е</div>
+          <div>
+            <strong class="review-card__name">Елена Д.</strong>
+            <div class="review-card__stars">★★★★★</div>
+          </div>
+          <span class="review-card__source">2ГИС</span>
+        </div>
+        <p class="review-card__text">«Семейный пакет — просто спасение! Взяли 2 лыжных комплекта + детские лыжи. Скидка приятная, хозяин отзывчивый.»</p>
+      </div>
+    </div>
+    <div class="social-widget">
+      <div class="social-widget__text">Следите за нами в ВКонтакте — там живые фото и видео из мастерской</div>
+      <a href="https://vk.com/prokat_v_tomske" target="_blank" rel="noopener" class="btn btn--vk">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14C20.67 22 22 20.67 22 15.07V8.93C22 3.33 20.67 2 15.07 2zm3.08 13.5h-1.7c-.64 0-.84-.51-2-1.68-1-.99-1.44-.84-1.44.16v1.55c0 .54-.17.68-1.1.68-1.62 0-3.41-.98-4.67-2.81C5.73 10.93 5.28 8.8 5.28 8.5c0-.34.09-.52.5-.52h1.7c.37 0 .51.17.65.57.72 2.07 1.92 3.88 2.41 3.88.19 0 .27-.09.27-.57V9.8c-.06-1.03-.6-1.12-.6-1.49 0-.2.16-.39.42-.39h2.67c.31 0 .42.16.42.5v2.7c0 .3.13.41.22.41.19 0 .35-.11.7-.46 1.09-1.22 1.87-3.09 1.87-3.09.1-.22.28-.43.65-.43h1.7c.51 0 .62.26.51.57-.21.98-2.27 3.87-2.27 3.87-.18.29-.25.41 0 .73.18.23.77.74 1.17 1.19.73.83 1.29 1.53 1.44 2.02.14.48-.12.73-.62.73z"/></svg>
+        Группа ВКонтакте
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== BOOKING ==================== -->
+<section class="booking" id="booking">
+  <div class="container">
+    <div class="booking__inner">
+      <div class="booking__content">
+        <h2 class="section-title">Записаться онлайн</h2>
+        <p class="booking__desc">Оставьте заявку — мы свяжемся в течение 30 минут и подберём снаряжение под ваши задачи.</p>
+        <div class="booking__features">
+          <div class="booking__feature">⚡ Ответим за 30 минут</div>
+          <div class="booking__feature">📦 Приготовим заранее</div>
+          <div class="booking__feature">🚗 Доставим за 300₽</div>
+        </div>
+      </div>
+      <form class="booking-form" id="bookingForm">
+        <div class="form-group">
+          <label class="form-label">Ваше имя</label>
+          <input type="text" class="form-input" placeholder="Иван Иванов" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Телефон</label>
+          <input type="tel" class="form-input" placeholder="+7 (900) 000-00-00" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Что нужно?</label>
+          <select class="form-input">
+            <option value="">Выберите услугу</option>
+            <option>Прокат лыж / сноуборда</option>
+            <option>Прокат тюбинга</option>
+            <option>Прокат велосипеда</option>
+            <option>Сервис / ремонт</option>
+            <option>Семейный пакет</option>
+            <option>Другое</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Дата и время</label>
+          <input type="datetime-local" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Комментарий (необязательно)</label>
+          <textarea class="form-input form-textarea" placeholder="Размер ботинок, количество человек, нужна доставка..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full btn--lg">Отправить заявку</button>
+        <p class="form-note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACTS / FOOTER ==================== -->
+<footer class="footer" id="contacts">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__col footer__col--info">
+        <a href="#" class="logo">
+          <span class="logo__icon">🚴</span>
+          <div class="logo__text">
+            <span class="logo__title logo__title--white">Актив-Позитив</span>
+            <span class="logo__sub">Велосипеды · Лыжи · Сервис</span>
+          </div>
+        </a>
+        <p class="footer__about">Живой прокат снаряжения от мастера-фаната. Готовим лыжи как для себя.</p>
+        <div class="footer__socials">
+          <a href="https://vk.com/prokat_v_tomske" target="_blank" rel="noopener" class="social-btn social-btn--vk" aria-label="ВКонтакте">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14C20.67 22 22 20.67 22 15.07V8.93C22 3.33 20.67 2 15.07 2zm3.08 13.5h-1.7c-.64 0-.84-.51-2-1.68-1-.99-1.44-.84-1.44.16v1.55c0 .54-.17.68-1.1.68-1.62 0-3.41-.98-4.67-2.81C5.73 10.93 5.28 8.8 5.28 8.5c0-.34.09-.52.5-.52h1.7c.37 0 .51.17.65.57.72 2.07 1.92 3.88 2.41 3.88.19 0 .27-.09.27-.57V9.8c-.06-1.03-.6-1.12-.6-1.49 0-.2.16-.39.42-.39h2.67c.31 0 .42.16.42.5v2.7c0 .3.13.41.22.41.19 0 .35-.11.7-.46 1.09-1.22 1.87-3.09 1.87-3.09.1-.22.28-.43.65-.43h1.7c.51 0 .62.26.51.57-.21.98-2.27 3.87-2.27 3.87-.18.29-.25.41 0 .73.18.23.77.74 1.17 1.19.73.83 1.29 1.53 1.44 2.02.14.48-.12.73-.62.73z"/></svg>
+          </a>
+          <a href="https://t.me/prokat_tomsk" target="_blank" rel="noopener" class="social-btn social-btn--tg" aria-label="Telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 13.697l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.958.862z"/></svg>
+          </a>
+          <a href="https://wa.me/73822000000" target="_blank" rel="noopener" class="social-btn social-btn--wa" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Услуги</h4>
+        <ul class="footer__links">
+          <li><a href="#catalog">Прокат лыж и сноубордов</a></li>
+          <li><a href="#catalog">Прокат велосипедов</a></li>
+          <li><a href="#catalog">Прокат тюбингов</a></li>
+          <li><a href="#repair">Ремонт велосипедов</a></li>
+          <li><a href="#repair">Лыжный сервис</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Контакты</h4>
+        <div class="footer__contact">
+          <div class="footer__contact-item">
+            <span>📍</span>
+            <span>Томск, Академгородок<br>(уточняйте при записи)</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>📞</span>
+            <a href="tel:+73822000000">+7 (3822) 00-00-00</a>
+          </div>
+          <div class="footer__contact-item">
+            <span>💬</span>
+            <a href="https://vk.com/prokat_v_tomske" target="_blank" rel="noopener">ВКонтакте</a>
+          </div>
+        </div>
+        <div class="footer__hours">
+          <h5>Режим работы</h5>
+          <div class="hours-row"><span>Пн–Пт</span><span>14:00 – 21:00</span></div>
+          <div class="hours-row"><span>Сб–Вс</span><span>10:00 – 21:00</span></div>
+          <div class="hours-note">Работаем допоздна — удобно после работы</div>
+        </div>
+      </div>
+
+      <div class="footer__col footer__col--map">
+        <h4 class="footer__col-title">Как нас найти</h4>
+        <div class="map-placeholder">
+          <div class="map-placeholder__inner">
+            <span class="map-placeholder__icon">🗺️</span>
+            <p>Томск, Академгородок</p>
+            <a href="https://yandex.ru/maps/67/tomsk/" target="_blank" rel="noopener" class="btn btn--outline-white btn--sm">Открыть карту</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2024 Актив-Позитив. Все права защищены.</p>
+      <p>Сделано с ❤️ для томских любителей активного отдыха</p>
+    </div>
+  </div>
+</footer>
+
+<!-- SUCCESS MODAL -->
+<div class="modal" id="successModal">
+  <div class="modal__inner">
+    <div class="modal__icon">✅</div>
+    <h3 class="modal__title">Заявка принята!</h3>
+    <p class="modal__text">Мы свяжемся с вами в течение 30 минут и подберём снаряжение.</p>
+    <button class="btn btn--primary" onclick="closeModal()">Отлично!</button>
+  </div>
+</div>
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
