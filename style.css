@@ -1385,9 +1385,9 @@ section[id], footer[id] { scroll-margin-top: 56px; }
   .offers,
   .delivery,
   .reviews,
-  .booking { padding: 56px 0; }
+  .booking { padding: 20px 0 40px; }
 
-  .section-header { margin-bottom: 32px; }
+  .section-header { margin-bottom: 20px; }
   .section-sub { font-size: 15px; }
 
   /* --- Directions --- */
