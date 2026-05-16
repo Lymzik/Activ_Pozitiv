@@ -530,11 +530,14 @@ a { color: inherit; text-decoration: none; }
 }
 
 .why-card {
-  padding: 32px;
+  padding: 20px 24px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   background: var(--white);
   transition: all var(--trans);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .why-card:hover {
@@ -550,15 +553,22 @@ a { color: inherit; text-decoration: none; }
 }
 .why-card--accent .why-card__text { opacity: .85; }
 
-.why-card__icon { font-size: 40px; margin-bottom: 16px; display: block; }
-
-.why-card__title {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 12px;
+.why-card__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.why-card__text { font-size: 15px; color: var(--mid); line-height: 1.6; }
+.why-card__icon { font-size: 28px; flex-shrink: 0; }
+
+.why-card__title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.why-card__text { font-size: 14px; color: var(--mid); line-height: 1.5; }
 .why-card--accent .why-card__text { color: rgba(255,255,255,.8); }
 
 /* ===========================
